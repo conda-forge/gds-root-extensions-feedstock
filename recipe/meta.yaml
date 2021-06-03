@@ -15,7 +15,7 @@ source:
   sha256: 275c43b5e6ad61357e1a1053210fe05522cfae0fa77213fa72a13ae3948b0995
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -30,7 +30,6 @@ requirements:
     - gds-frameio-base >={{ gds_frameio_version }}
     - gds-lsmp >={{ gds_lsmp_version }}
     - root_base
-    - root-binaries
 
 outputs:
   - name: gds-root-extensions-base
@@ -52,7 +51,6 @@ outputs:
         - ldas-tools-al
         - ldas-tools-framecpp
         - root_base
-        - root-binaries
       run:
         - gds-base >={{ gds_base_version }}
         - gds-frameio-base >={{ gds_frameio_version }}
@@ -72,8 +70,6 @@ outputs:
       - lib/libRgdstrig*
       - lib/libRxsil*
     test:
-      requires:
-        - root-binaries
       commands:
         - test -f ${PREFIX}/lib/libRframeio${SHLIB_EXT}  # [not linux]
         - root -b -l -x -q -e 'gSystem->Load("libRframeio");'  # [linux]
@@ -98,7 +94,6 @@ outputs:
       host:
         - gds-base >={{ gds_base_version }}
         - root_base
-        - root-binaries
       run:
         - gds-base >={{ gds_base_version }}
         - {{ pin_subpackage("gds-root-extensions-base", exact=True) }}
@@ -106,8 +101,6 @@ outputs:
     files:
       - lib/libRdmtsigp*
     test:
-      requires:
-        - root-binaries
       commands:
         - test -f ${PREFIX}/lib/libRdmtsigp${SHLIB_EXT}  # [not linux]
         - root -b -x -q -e 'gSystem->Load("libRdmtsigp")'  # [linux]
