@@ -11,6 +11,6 @@ cxx_compiler_version:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 root_base:
-- 6.24.0
+- 6.24.4
 target_platform:
 - osx-64
