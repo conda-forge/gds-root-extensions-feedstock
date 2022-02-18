@@ -15,7 +15,7 @@ source:
   sha256: 275c43b5e6ad61357e1a1053210fe05522cfae0fa77213fa72a13ae3948b0995
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
 
 requirements:
@@ -59,7 +59,7 @@ outputs:
         - ldas-tools-framecpp
         - root_base
     files:
-      - share/gds/setup/root-setup
+      - include/gds/events/*.hh
       - lib/libgdsevent{{ SHLIB_EXT }}*
       - lib/libRframefast*
       - lib/libRframeio*
@@ -69,6 +69,8 @@ outputs:
       - lib/libRgdsmath*
       - lib/libRgdstrig*
       - lib/libRxsil*
+      - lib/pkgconfig/gdsevents.pc
+      - share/gds/setup/root-setup
     test:
       commands:
         - test -f ${PREFIX}/lib/libRframeio${SHLIB_EXT}  # [not linux]
