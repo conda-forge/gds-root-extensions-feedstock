@@ -15,7 +15,7 @@ source:
   sha256: 275c43b5e6ad61357e1a1053210fe05522cfae0fa77213fa72a13ae3948b0995
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('cxx') }}
     - make
     - pkg-config
+    - sysroot_linux-64 2.17  # [linux64]
   host:
     - gds-base >={{ gds_base_version }}
     - gds-base-crtools >={{ gds_base_version }}
@@ -42,6 +43,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - sysroot_linux-64 2.17  # [linux64]
       host:
         - gds-base >={{ gds_base_version }}
         - gds-base-crtools >={{ gds_base_version }}
@@ -93,6 +95,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - sysroot_linux-64 2.17  # [linux64]
       host:
         - gds-base >={{ gds_base_version }}
         - root_base
