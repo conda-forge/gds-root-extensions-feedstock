@@ -39,7 +39,7 @@ outputs:
         # header required, no libraries
         - gds-base-crtools
       run_exports:
-        - {{ pin_subpackage("gds-root-extensions-base", max_pin="x.x") }}
+        - {{ pin_subpackage("gds-root-extensions-base", max_pin="x") }}
     requirements:
       build:
         - {{ compiler('cxx') }}
