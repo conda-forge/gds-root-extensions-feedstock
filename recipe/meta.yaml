@@ -2,9 +2,9 @@
 {% set version = "3.0.0" %}
 
 # dependencies
-{% set gds_base_version = "2.19.10" %}
-{% set gds_lsmp_version = "2.19.9" %}
-{% set gds_frameio_version = "2.19.7" %}
+{% set gds_base_version = "3.0.0" %}
+{% set gds_lsmp_version = "3.0.0" %}
+{% set gds_frameio_version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
