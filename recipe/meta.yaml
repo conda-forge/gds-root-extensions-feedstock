@@ -1,10 +1,10 @@
 {% set name = "gds-root-extensions" %}
-{% set version = "2.19.5" %}
+{% set version = "3.0.0" %}
 
 # dependencies
-{% set gds_base_version = "2.19.10" %}
-{% set gds_lsmp_version = "2.19.9" %}
-{% set gds_frameio_version = "2.19.7" %}
+{% set gds_base_version = "3.0.0" %}
+{% set gds_lsmp_version = "3.0.0" %}
+{% set gds_frameio_version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 48dbd19c78e11084eae04198bd649df1c41fd75daef8787d3910f8788a739b24
+  sha256: 58bf45d230ff303bca6ced0f0a634159a15c0e398299abe1a64a1b74cffb0d4d
 
 build:
   number: 0
@@ -39,7 +39,7 @@ outputs:
         # header required, no libraries
         - gds-base-crtools
       run_exports:
-        - {{ pin_subpackage("gds-root-extensions-base", max_pin="x.x") }}
+        - {{ pin_subpackage("gds-root-extensions-base", max_pin="x") }}
     requirements:
       build:
         - {{ compiler('cxx') }}
