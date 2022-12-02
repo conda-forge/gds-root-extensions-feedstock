@@ -15,7 +15,7 @@ source:
   sha256: 58bf45d230ff303bca6ced0f0a634159a15c0e398299abe1a64a1b74cffb0d4d
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -91,7 +91,7 @@ outputs:
   - name: gds-root-extensions-crtools
     build:
       run_exports:
-        - {{ pin_subpackage("gds-root-extensions-crtools", max_pin="x.x") }}
+        - {{ pin_subpackage("gds-root-extensions-crtools", max_pin="x") }}
     requirements:
       build:
         - {{ compiler('cxx') }}
