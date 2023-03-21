@@ -1,17 +1,33 @@
+About gds-root-extensions-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gds-root-extensions-feedstock/blob/main/LICENSE.txt)
+
 About gds-root-extensions
-=========================
+-------------------------
 
 Home: https://wiki.ligo.org/Computing/DASWG/DMT
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gds-root-extensions-feedstock/blob/main/LICENSE.txt)
 
 Summary: GDS ROOT extensions
 
 Development: https://git.ligo.org/gds/gds.git
 
 GDS ROOT extensions
+
+About gds-root-extensions-crtools
+---------------------------------
+
+Home: https://wiki.ligo.org/Computing/DASWG/DMT
+
+Package license: GPL-2.0-only
+
+Summary: GDS control room tools
+
+Development: https://git.ligo.org/gds/gds.git
+
+GDS ROOT extensions for control rooms
 
 
 Current build status
