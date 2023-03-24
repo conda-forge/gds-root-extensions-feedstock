@@ -1,11 +1,14 @@
+About gds-root-extensions-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gds-root-extensions-feedstock/blob/main/LICENSE.txt)
+
 About gds-root-extensions
-=========================
+-------------------------
 
 Home: https://wiki.ligo.org/Computing/DASWG/DMT
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gds-root-extensions-feedstock/blob/main/LICENSE.txt)
 
 Summary: GDS ROOT extensions
 
@@ -13,12 +16,32 @@ Development: https://git.ligo.org/gds/gds.git
 
 GDS ROOT extensions
 
+About gds-root-extensions-crtools
+---------------------------------
+
+Home: https://wiki.ligo.org/Computing/DASWG/DMT
+
+Package license: GPL-2.0-only
+
+Summary: GDS control room tools
+
+Development: https://git.ligo.org/gds/gds.git
+
+GDS ROOT extensions for control rooms
+
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/gds-root-extensions-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/gds-root-extensions-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -43,13 +66,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
