@@ -1,8 +1,6 @@
-diff --git a/include/ldastoolsal/fstream.hh b/include/ldastoolsal/fstream.hh
-index 0bdc4d2..8030c24 100644
---- a/include/ldastoolsal/fstream.hh
-+++ b/include/ldastoolsal/fstream.hh
-@@ -45,9 +45,6 @@ namespace LDASTools
+--- include/ldastoolsal/fstream.hh	2021-03-26 13:47:46.000000000 +0000
++++ include/ldastoolsal/fstream.hh	2023-08-31 13:58:19.524010997 +0100
+@@ -45,9 +45,6 @@
          //// \cond EXCLUDE
          template < class _Traits >
          struct _Eq_traits
