@@ -16,6 +16,7 @@ ${SRC_DIR}/configure \
 ;
 
 # Apply hack for ldas-tools-al using a no-longer-defined function
+ls $PREFIX/include/ldastoolsal/
 patch -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
 
 # build
