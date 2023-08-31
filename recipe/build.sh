@@ -16,7 +16,7 @@ ${SRC_DIR}/configure \
 ;
 
 # Apply hack for ldas-tools-al using a no-longer-defined function
-patch -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
+patch -N -p0 -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
 
 # build
 make -j ${CPU_COUNT} VERBOSE=1 V=1
@@ -28,4 +28,4 @@ make -j ${CPU_COUNT} VERBOSE=1 V=1 check
 make -j ${CPU_COUNT} VERBOSE=1 V=1 install
 
 # Revert hack for ldas-tools-al using a no-longer-defined function
-patch -R -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
+patch -R -p0 -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
