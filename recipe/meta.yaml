@@ -15,7 +15,7 @@ source:
   sha256: 58bf45d230ff303bca6ced0f0a634159a15c0e398299abe1a64a1b74cffb0d4d
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
 
 requirements:
@@ -31,6 +31,8 @@ requirements:
     - gds-frameio-base >={{ gds_frameio_version }}
     - gds-lsmp >={{ gds_lsmp_version }}
     - root_base
+    # to read framecpp headers:
+    - libboost-headers
 
 outputs:
   - name: gds-root-extensions-base
