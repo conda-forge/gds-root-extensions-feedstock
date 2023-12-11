@@ -22,7 +22,10 @@ patch -N -p0 -f -i $RECIPE_DIR/ldastoolsal-fstream-hack.patch -d $PREFIX
 make -j ${CPU_COUNT} VERBOSE=1 V=1
 
 # test
-make -j ${CPU_COUNT} VERBOSE=1 V=1 check
+# root is broken inside qemu, see https://github.com/conda-forge/gwollum-feedstock/pull/53#issuecomment-1849882209
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" && "${CROSSCOMPILING_EMULATOR}" == "" ]]; then
+  make -j ${CPU_COUNT} VERBOSE=1 V=1 check
+fi
 
 # install
 make -j ${CPU_COUNT} VERBOSE=1 V=1 install
