@@ -13,6 +13,6 @@ docker_image:
 ldas_tools_framecpp:
 - '2.9'
 root_base:
-- 6.30.2
+- 6.28.12
 target_platform:
-- linux-ppc64le
+- linux-64

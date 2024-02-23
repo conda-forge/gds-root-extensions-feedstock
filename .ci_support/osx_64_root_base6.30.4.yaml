@@ -13,6 +13,6 @@ ldas_tools_framecpp:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 root_base:
-- 6.28.10
+- 6.30.4
 target_platform:
 - osx-64
