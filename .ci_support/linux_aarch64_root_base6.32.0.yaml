@@ -1,5 +1,9 @@
 BUILD:
 - aarch64-conda_cos7-linux-gnu
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.17'
 cdt_arch:
 - aarch64
 cdt_name:
@@ -17,6 +21,9 @@ docker_image:
 ldas_tools_framecpp:
 - '2.9'
 root_base:
-- 6.28.12
+- 6.32.0
 target_platform:
 - linux-aarch64
+zip_keys:
+- - c_stdlib_version
+  - cdt_name
