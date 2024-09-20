@@ -1,10 +1,10 @@
 {% set name = "gds-root-extensions" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 # dependencies
-{% set gds_base_version = "3.0.0" %}
-{% set gds_lsmp_version = "3.0.0" %}
-{% set gds_frameio_version = "3.0.0" %}
+{% set gds_base_version = "3.0.1" %}
+{% set gds_lsmp_version = "3.0.1" %}
+{% set gds_frameio_version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -12,11 +12,12 @@ package:
 
 source:
   url: https://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 58bf45d230ff303bca6ced0f0a634159a15c0e398299abe1a64a1b74cffb0d4d
+  sha256: 3f8abcddbf0ec88b124cafd5ffc941a6e5a010565f5c3e4ad63fafd57f926092
 
 build:
-  number: 8
+  number: 0
   skip: true  # [win]
+  skip: true  # [osx and root_base == "6.30.4"]
 
 requirements:
   build:
