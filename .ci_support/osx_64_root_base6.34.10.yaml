@@ -21,6 +21,6 @@ libboost_headers:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 root_base:
-- 6.34.4
+- 6.34.10
 target_platform:
 - osx-64
