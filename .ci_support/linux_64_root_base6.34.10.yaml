@@ -15,7 +15,7 @@ docker_image:
 ldas_tools_framecpp:
 - '2.9'
 libboost_headers:
-- '1.86'
+- '1.88'
 root_base:
 - 6.34.10
 target_platform:
