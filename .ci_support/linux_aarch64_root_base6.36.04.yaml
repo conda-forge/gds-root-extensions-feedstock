@@ -11,11 +11,11 @@ cxx_compiler:
 cxx_compiler_version:
 - '14'
 docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:cos7
+- quay.io/condaforge/linux-anvil-x86_64:alma9
 ldas_tools_framecpp:
 - '2.9'
 libboost_headers:
-- '1.86'
+- '1.88'
 root_base:
 - 6.36.04
 target_platform:
