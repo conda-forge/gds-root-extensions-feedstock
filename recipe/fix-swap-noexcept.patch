@@ -1,5 +1,5 @@
 --- a/events/Algorithm.hh.in	2026-02-18 17:15:20
-+++ events/Algorithm.hh.in	2026-02-18 17:15:35
++++ b/events/Algorithm.hh.in	2026-02-18 21:02:31
 @@ -54,15 +54,8 @@
  
  namespace std {
