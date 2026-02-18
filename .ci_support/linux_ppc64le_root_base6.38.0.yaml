@@ -17,6 +17,6 @@ ldas_tools_framecpp:
 libboost_headers:
 - '1.88'
 root_base:
-- 6.34.10
+- 6.38.0
 target_platform:
-- linux-aarch64
+- linux-ppc64le
