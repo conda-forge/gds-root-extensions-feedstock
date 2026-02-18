@@ -1,0 +1,18 @@
+--- a/events/Algorithm.hh.in	2026-02-18 17:15:20
++++ events/Algorithm.hh.in	2026-02-18 17:15:35
+@@ -54,15 +54,8 @@
+ 
+ namespace std {
+ 
+-#if @HAVE_IS_NOTHROW_MOVEABLE@ // HAVE_IS_NOTHROW_MOVEABLE
+ #define GDS_SWAP_NOEXCEPT(TCLASS) \
+   noexcept( std::is_nothrow_move_constructible< TCLASS >::value && std::is_nothrow_move_assignable< TCLASS >::value )
+-#elif @HAVE_IS_NOTHROW_SWAPPABLE@ // HAVE_IS_NOTHROW_SWAPPABLE
+-#define GDS_SWAP_NOEXCEPT(TCLASS) \
+-  noexcept( __is_nothrow_swappable< TCLASS >::value )
+-#else // HAVE_IS_NOTHROW_SWAPPABLE
+-#define GDS_SWAP_NOEXCEPT(TCLASS)
+-#endif // HAVE_IS_NOTHROW_SWAPPABLE
+ 
+ // An efficient way to swap a layout
+ template<> 
