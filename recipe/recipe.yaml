@@ -41,6 +41,7 @@ outputs:
       build:
         - ${{ compiler('cxx') }}
         - ${{ stdlib("c") }}
+        - gnuconfig
         - make
         - pkg-config
       host:
