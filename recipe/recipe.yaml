@@ -28,7 +28,7 @@ outputs:
     build:
       files:
         - include/gds/events/*.hh
-        - lib/libgdsevent${{ SHLIB_EXT }}*
+        - lib/libgdsevent*
         - lib/libRframefast*
         - lib/libRframeio*
         - lib/libRgdsbase*
