@@ -95,6 +95,9 @@ outputs:
       build:
         - ${{ compiler('cxx') }}
         - ${{ stdlib("c") }}
+        - gnuconfig
+        - make
+        - pkg-config
       host:
         - gds-base >=${{ gds_base_version }}
         - root_base
