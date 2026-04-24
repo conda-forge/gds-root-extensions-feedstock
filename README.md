@@ -1,11 +1,11 @@
-About gds-root-extensions-feedstock
-===================================
+About gds-root-extensions-base-feedstock
+========================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gds-root-extensions-feedstock/blob/main/LICENSE.txt)
 
 
-About gds-root-extensions
--------------------------
+About gds-root-extensions-base
+------------------------------
 
 Home: https://wiki.ligo.org/Computing/DASWG/DMT
 
@@ -16,7 +16,6 @@ Summary: GDS ROOT extensions
 Development: https://git.ligo.org/gds/gds.git
 
 GDS ROOT extensions
-
 
 About gds-root-extensions-crtools
 ---------------------------------
@@ -30,7 +29,6 @@ Summary: GDS control room tools
 Development: https://git.ligo.org/gds/gds.git
 
 GDS ROOT extensions for control rooms
-
 
 Current build status
 ====================
@@ -50,59 +48,108 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_root_base6.34.10</td>
+              <td>linux_64_root_base6.36.8root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.34.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.36.8root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_root_base6.36.04</td>
+              <td>linux_64_root_base6.38.0root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.36.04" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.38.0root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_root_base6.34.10</td>
+              <td>linux_64_root_base6.38.0root_cxx_standard23</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_root_base6.34.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_root_base6.36.04</td>
+              <td>linux_aarch64_root_base6.36.8root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_root_base6.36.04" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_root_base6.36.8root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_root_base6.34.10</td>
+              <td>linux_aarch64_root_base6.38.0root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_root_base6.34.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_root_base6.38.0root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_root_base6.36.04</td>
+              <td>linux_aarch64_root_base6.38.0root_cxx_standard23</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_root_base6.36.04" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.34.10</td>
+              <td>linux_ppc64le_root_base6.36.8root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.34.10" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_root_base6.36.8root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.36.04</td>
+              <td>linux_ppc64le_root_base6.38.0root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.36.04" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_root_base6.38.0root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_root_base6.38.0root_cxx_standard23</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_root_base6.38.0root_cxx_standard23" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_root_base6.36.8root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.36.8root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_root_base6.38.0root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_root_base6.38.0root_cxx_standard23</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0root_cxx_standard23" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.36.8root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.36.8root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.38.0root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.38.0root_cxx_standard23</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
             </tr>
@@ -121,10 +168,10 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gds--root--extensions--base-green.svg)](https://anaconda.org/conda-forge/gds-root-extensions-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gds-root-extensions-base.svg)](https://anaconda.org/conda-forge/gds-root-extensions-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gds-root-extensions-base.svg)](https://anaconda.org/conda-forge/gds-root-extensions-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gds-root-extensions-base.svg)](https://anaconda.org/conda-forge/gds-root-extensions-base) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gds--root--extensions--crtools-green.svg)](https://anaconda.org/conda-forge/gds-root-extensions-crtools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gds-root-extensions-crtools.svg)](https://anaconda.org/conda-forge/gds-root-extensions-crtools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gds-root-extensions-crtools.svg)](https://anaconda.org/conda-forge/gds-root-extensions-crtools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gds-root-extensions-crtools.svg)](https://anaconda.org/conda-forge/gds-root-extensions-crtools) |
 
-Installing gds-root-extensions
-==============================
+Installing gds-root-extensions-base
+===================================
 
-Installing `gds-root-extensions` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `gds-root-extensions-base` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -210,17 +257,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating gds-root-extensions-feedstock
-======================================
+Updating gds-root-extensions-base-feedstock
+===========================================
 
-If you would like to improve the gds-root-extensions recipe or build a new
+If you would like to improve the gds-root-extensions-base recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/gds-root-extensions-feedstock are
+Note that all branches in the conda-forge/gds-root-extensions-base-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
