@@ -18,27 +18,18 @@ source:
     - fix-swap-noexcept.patch
 
 build:
+  dynamic_linking:
+    overdepending_behavior: error
+    overlinking_behavior: error
   number: 8
   skip:
     - win
 
 outputs:
-  - package:
-      name: gds-root-extensions-base
+  - staging:
+      name: gds-root-extensions-build
     build:
-      files:
-        - include/gds/events/*.hh
-        - lib/libgdsevent*
-        - lib/libRframefast*
-        - lib/libRframeio*
-        - lib/libRgdsbase*
-        - lib/libRgdsevent*
-        - lib/libRgdscntr*
-        - lib/libRgdsmath*
-        - lib/libRgdstrig*
-        - lib/libRxsil*
-        - lib/pkgconfig/gdsevents.pc
-        - share/gds/setup/root-setup
+      script: build
     requirements:
       build:
         - ${{ compiler('cxx') }}
@@ -58,13 +49,27 @@ outputs:
         - root_cxx_standard
         # to read framecpp headers:
         - libboost-headers
-      run:
-        - gds-base >=${{ gds_base_version }}
-        - gds-frameio-base >=${{ gds_frameio_version }}
-        - gds-lsmp >=${{ gds_lsmp_version }}
-        - ldas-tools-al
-        - ldas-tools-framecpp
-        - root_base
+
+  - package:
+      name: gds-root-extensions-base
+    inherit: gds-root-extensions-build
+    build:
+      dynamic_linking:
+        overdepending_behavior: error
+      files:
+        - include/gds/events/*.hh
+        - lib/libgdsevent*
+        - lib/libRframefast*
+        - lib/libRframeio*
+        - lib/libRgdsbase*
+        - lib/libRgdsevent*
+        - lib/libRgdscntr*
+        - lib/libRgdsmath*
+        - lib/libRgdstrig*
+        - lib/libRxsil*
+        - lib/pkgconfig/gdsevents.pc
+        - share/gds/setup/root-setup
+    requirements:
       run_exports:
         - ${{ pin_subpackage("gds-root-extensions-base", upper_bound="x") }}
       ignore_run_exports:
@@ -78,34 +83,16 @@ outputs:
             then: root -b -l -x -q -e 'gSystem->Load("libRframeio");'
           - if: linux
             then: root -b -l -x -q -e 'gSystem->Load("libRgdsevent");'
-    about:
-      license: GPL-2.0-only
-      license_file: COPYING
-      summary: GDS ROOT extensions
-      description: GDS ROOT extensions
-      homepage: https://wiki.ligo.org/Computing/DASWG/DMT
-      repository: https://git.ligo.org/gds/gds.git
 
   - package:
       name: gds-root-extensions-crtools
+    inherit: gds-root-extensions-build
     build:
+      dynamic_linking:
+        overdepending_behavior: error
       files:
         - lib/libRdmtsigp*
     requirements:
-      build:
-        - ${{ compiler('cxx') }}
-        - ${{ stdlib("c") }}
-        - gnuconfig
-        - make
-        - pkg-config
-      host:
-        - gds-base >=${{ gds_base_version }}
-        - root_base
-        - root_cxx_standard
-      run:
-        - gds-base >=${{ gds_base_version }}
-        - ${{ pin_subpackage("gds-root-extensions-base", exact=true) }}
-        - root_base
       run_exports:
         - ${{ pin_subpackage("gds-root-extensions-crtools", upper_bound="x") }}
     tests:
@@ -114,13 +101,6 @@ outputs:
             then: test -f ${PREFIX}/lib/libRdmtsigp${SHLIB_EXT}
           - if: linux
             then: root -b -x -q -e 'gSystem->Load("libRdmtsigp")'
-    about:
-      license: GPL-2.0-only
-      license_file: COPYING
-      summary: GDS control room tools
-      description: GDS ROOT extensions for control rooms
-      homepage: https://wiki.ligo.org/Computing/DASWG/DMT
-      repository: https://git.ligo.org/gds/gds.git
 
 about:
   license: GPL-2.0-only
