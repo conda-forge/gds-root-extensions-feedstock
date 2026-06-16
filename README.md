@@ -114,27 +114,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_arm64_root_base6.36.8root_cxx_standard20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.36.8root_cxx_standard20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_root_base6.38.0root_cxx_standard20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_root_base6.38.0root_cxx_standard23</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12949&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gds-root-extensions-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard23" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
