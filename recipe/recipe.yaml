@@ -1,0 +1,113 @@
+schema_version: 1
+
+context:
+  name: gds-root-extensions
+  version: 3.0.1
+  gds_base_version: 3.0.1
+  gds_lsmp_version: 3.0.1
+  gds_frameio_version: 3.0.1
+
+recipe:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://software.igwn.org/sources/source/${{ name }}-${{ version }}.tar.gz
+  sha256: 3f8abcddbf0ec88b124cafd5ffc941a6e5a010565f5c3e4ad63fafd57f926092
+  patches:
+    - fix-swap-noexcept.patch
+
+build:
+  number: 8
+  skip:
+    - win
+
+outputs:
+  - staging:
+      name: gds-root-extensions-build
+    build:
+      script: build
+    requirements:
+      build:
+        - ${{ compiler('cxx') }}
+        - ${{ stdlib("c") }}
+        - gnuconfig
+        - make
+        - pkg-config
+      host:
+        - gds-base >=${{ gds_base_version }}
+        - gds-base-crtools >=${{ gds_base_version }}
+        - gds-base-gdstrig >=${{ gds_base_version }}
+        - gds-frameio-base >=${{ gds_frameio_version }}
+        - gds-lsmp >=${{ gds_lsmp_version }}
+        - ldas-tools-al
+        - ldas-tools-framecpp
+        - root_base
+        - root_cxx_standard
+        # to read framecpp headers:
+        - libboost-headers
+
+  - package:
+      name: gds-root-extensions-base
+    inherit: gds-root-extensions-build
+    build:
+      dynamic_linking:
+        overdepending_behavior: error
+      files:
+        include:
+          - include/gds/**/*.hh
+          - lib/lib*
+          - lib/pkgconfig/gds*.pc
+          - shared/gds/setup/root-setup
+        exclude:
+          # See gds-root-extensions-crtools
+          - lib/libRdmtsigp*
+    requirements:
+      run_exports:
+        - ${{ pin_subpackage("gds-root-extensions-base", upper_bound="x") }}
+      ignore_run_exports:
+        by_name:
+          - gds-base-crtools
+    tests:
+      - package_contents:
+          lib:
+            - gdsevent
+            - Rframeio
+      - if: linux
+        then:
+          script:
+            - root -b -l -x -q -e 'gSystem->Load("libRframeio");'
+            - root -b -l -x -q -e 'gSystem->Load("libRgdsevent");'
+
+  - package:
+      name: gds-root-extensions-crtools
+    inherit: gds-root-extensions-build
+    build:
+      dynamic_linking:
+        overdepending_behavior: error
+      files:
+        - lib/libRdmtsigp*
+    requirements:
+      run_exports:
+        - ${{ pin_subpackage("gds-root-extensions-crtools", upper_bound="x") }}
+    tests:
+      - package_contents:
+          lib:
+            - Rdmtsigp
+      - if: linux
+        then:
+          script:
+            - root -b -x -q -e 'gSystem->Load("libRdmtsigp")'
+
+about:
+  license: GPL-2.0-only
+  license_file: COPYING
+  summary: GDS ROOT extensions
+  description: GDS ROOT extensions
+  homepage: https://wiki.ligo.org/Computing/DASWG/DMT
+  repository: https://git.ligo.org/gds/gds.git
+
+extra:
+  recipe-maintainers:
+    - duncanmmacleod
+    - emaros

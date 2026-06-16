@@ -2,6 +2,11 @@
 
 set -e
 
+# update config.sub/config.guess for arm64-apple-darwin support
+if [ -d "${BUILD_PREFIX}/share/gnuconfig" ]; then
+  cp ${BUILD_PREFIX}/share/gnuconfig/config.* ${SRC_DIR}/config/
+fi
+
 mkdir -p _build
 cd _build
 
