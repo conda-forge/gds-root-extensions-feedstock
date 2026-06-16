@@ -18,9 +18,6 @@ source:
     - fix-swap-noexcept.patch
 
 build:
-  dynamic_linking:
-    overdepending_behavior: error
-    overlinking_behavior: error
   number: 8
   skip:
     - win
@@ -57,18 +54,14 @@ outputs:
       dynamic_linking:
         overdepending_behavior: error
       files:
-        - include/gds/events/*.hh
-        - lib/libgdsevent*
-        - lib/libRframefast*
-        - lib/libRframeio*
-        - lib/libRgdsbase*
-        - lib/libRgdsevent*
-        - lib/libRgdscntr*
-        - lib/libRgdsmath*
-        - lib/libRgdstrig*
-        - lib/libRxsil*
-        - lib/pkgconfig/gdsevents.pc
-        - share/gds/setup/root-setup
+        include:
+          - include/gds/**/*.hh
+          - lib/lib*
+          - lib/pkgconfig/gds*.pc
+          - shared/gds/setup/root-setup
+        exclude:
+          # See gds-root-extensions-crtools
+          - lib/libRdmtsigp*
     requirements:
       run_exports:
         - ${{ pin_subpackage("gds-root-extensions-base", upper_bound="x") }}
@@ -76,13 +69,15 @@ outputs:
         by_name:
           - gds-base-crtools
     tests:
-      - script:
-          - if: not linux
-            then: test -f ${PREFIX}/lib/libRframeio${SHLIB_EXT}
-          - if: linux
-            then: root -b -l -x -q -e 'gSystem->Load("libRframeio");'
-          - if: linux
-            then: root -b -l -x -q -e 'gSystem->Load("libRgdsevent");'
+      - package_contents:
+          lib:
+            - gdsevent
+            - Rframeio
+      - if: linux
+        then:
+          script:
+            - root -b -l -x -q -e 'gSystem->Load("libRframeio");'
+            - root -b -l -x -q -e 'gSystem->Load("libRgdsevent");'
 
   - package:
       name: gds-root-extensions-crtools
@@ -96,11 +91,13 @@ outputs:
       run_exports:
         - ${{ pin_subpackage("gds-root-extensions-crtools", upper_bound="x") }}
     tests:
-      - script:
-          - if: not linux
-            then: test -f ${PREFIX}/lib/libRdmtsigp${SHLIB_EXT}
-          - if: linux
-            then: root -b -x -q -e 'gSystem->Load("libRdmtsigp")'
+      - package_contents:
+          lib:
+            - Rdmtsigp
+      - if: linux
+        then:
+          script:
+            - root -b -x -q -e 'gSystem->Load("libRdmtsigp")'
 
 about:
   license: GPL-2.0-only
