@@ -41,18 +41,18 @@ description = "Build gds-root-extensions-feedstock with variant linux_64_root_ba
 [tasks."inspect-linux_64_root_base6.38.4root_cxx_standard23"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.38.4root_cxx_standard23.yaml"
 description = "List contents of gds-root-extensions-feedstock packages built for variant linux_64_root_base6.38.4root_cxx_standard23"
-[tasks."build-linux_64_root_base6.40.0root_cxx_standard20"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.40.0root_cxx_standard20.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_64_root_base6.40.0root_cxx_standard20 directly (without setup scripts)"
-[tasks."inspect-linux_64_root_base6.40.0root_cxx_standard20"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.40.0root_cxx_standard20.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_64_root_base6.40.0root_cxx_standard20"
-[tasks."build-linux_64_root_base6.40.0root_cxx_standard23"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.40.0root_cxx_standard23.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_64_root_base6.40.0root_cxx_standard23 directly (without setup scripts)"
-[tasks."inspect-linux_64_root_base6.40.0root_cxx_standard23"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.40.0root_cxx_standard23.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_64_root_base6.40.0root_cxx_standard23"
+[tasks."build-linux_64_root_base6.40.2root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.40.2root_cxx_standard20.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_64_root_base6.40.2root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_64_root_base6.40.2root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.40.2root_cxx_standard20.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_64_root_base6.40.2root_cxx_standard20"
+[tasks."build-linux_64_root_base6.40.2root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.40.2root_cxx_standard23.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_64_root_base6.40.2root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_64_root_base6.40.2root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.40.2root_cxx_standard23.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_64_root_base6.40.2root_cxx_standard23"
 [tasks."build-linux_aarch64_root_base6.36.10root_cxx_standard20"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.36.10root_cxx_standard20.yaml"
 description = "Build gds-root-extensions-feedstock with variant linux_aarch64_root_base6.36.10root_cxx_standard20 directly (without setup scripts)"
@@ -71,18 +71,18 @@ description = "Build gds-root-extensions-feedstock with variant linux_aarch64_ro
 [tasks."inspect-linux_aarch64_root_base6.38.4root_cxx_standard23"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.38.4root_cxx_standard23.yaml"
 description = "List contents of gds-root-extensions-feedstock packages built for variant linux_aarch64_root_base6.38.4root_cxx_standard23"
-[tasks."build-linux_aarch64_root_base6.40.0root_cxx_standard20"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.40.0root_cxx_standard20.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_aarch64_root_base6.40.0root_cxx_standard20 directly (without setup scripts)"
-[tasks."inspect-linux_aarch64_root_base6.40.0root_cxx_standard20"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.40.0root_cxx_standard20.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_aarch64_root_base6.40.0root_cxx_standard20"
-[tasks."build-linux_aarch64_root_base6.40.0root_cxx_standard23"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.40.0root_cxx_standard23.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_aarch64_root_base6.40.0root_cxx_standard23 directly (without setup scripts)"
-[tasks."inspect-linux_aarch64_root_base6.40.0root_cxx_standard23"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.40.0root_cxx_standard23.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_aarch64_root_base6.40.0root_cxx_standard23"
+[tasks."build-linux_aarch64_root_base6.40.2root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.40.2root_cxx_standard20.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_aarch64_root_base6.40.2root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_root_base6.40.2root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.40.2root_cxx_standard20.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_aarch64_root_base6.40.2root_cxx_standard20"
+[tasks."build-linux_aarch64_root_base6.40.2root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.40.2root_cxx_standard23.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_aarch64_root_base6.40.2root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_root_base6.40.2root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.40.2root_cxx_standard23.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_aarch64_root_base6.40.2root_cxx_standard23"
 [tasks."build-linux_ppc64le_root_base6.36.10root_cxx_standard20"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.36.10root_cxx_standard20.yaml"
 description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_root_base6.36.10root_cxx_standard20 directly (without setup scripts)"
@@ -101,18 +101,18 @@ description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_ro
 [tasks."inspect-linux_ppc64le_root_base6.38.4root_cxx_standard23"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.38.4root_cxx_standard23.yaml"
 description = "List contents of gds-root-extensions-feedstock packages built for variant linux_ppc64le_root_base6.38.4root_cxx_standard23"
-[tasks."build-linux_ppc64le_root_base6.40.0root_cxx_standard20"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.40.0root_cxx_standard20.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_root_base6.40.0root_cxx_standard20 directly (without setup scripts)"
-[tasks."inspect-linux_ppc64le_root_base6.40.0root_cxx_standard20"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.40.0root_cxx_standard20.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_ppc64le_root_base6.40.0root_cxx_standard20"
-[tasks."build-linux_ppc64le_root_base6.40.0root_cxx_standard23"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.40.0root_cxx_standard23.yaml"
-description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_root_base6.40.0root_cxx_standard23 directly (without setup scripts)"
-[tasks."inspect-linux_ppc64le_root_base6.40.0root_cxx_standard23"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.40.0root_cxx_standard23.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant linux_ppc64le_root_base6.40.0root_cxx_standard23"
+[tasks."build-linux_ppc64le_root_base6.40.2root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.40.2root_cxx_standard20.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_root_base6.40.2root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_root_base6.40.2root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.40.2root_cxx_standard20.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_ppc64le_root_base6.40.2root_cxx_standard20"
+[tasks."build-linux_ppc64le_root_base6.40.2root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.40.2root_cxx_standard23.yaml"
+description = "Build gds-root-extensions-feedstock with variant linux_ppc64le_root_base6.40.2root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_root_base6.40.2root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.40.2root_cxx_standard23.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant linux_ppc64le_root_base6.40.2root_cxx_standard23"
 [tasks."build-osx_64_root_base6.36.10root_cxx_standard20"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.36.10root_cxx_standard20.yaml"
 description = "Build gds-root-extensions-feedstock with variant osx_64_root_base6.36.10root_cxx_standard20 directly (without setup scripts)"
@@ -131,18 +131,18 @@ description = "Build gds-root-extensions-feedstock with variant osx_64_root_base
 [tasks."inspect-osx_64_root_base6.38.4root_cxx_standard23"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.38.4root_cxx_standard23.yaml"
 description = "List contents of gds-root-extensions-feedstock packages built for variant osx_64_root_base6.38.4root_cxx_standard23"
-[tasks."build-osx_64_root_base6.40.0root_cxx_standard20"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.40.0root_cxx_standard20.yaml"
-description = "Build gds-root-extensions-feedstock with variant osx_64_root_base6.40.0root_cxx_standard20 directly (without setup scripts)"
-[tasks."inspect-osx_64_root_base6.40.0root_cxx_standard20"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.40.0root_cxx_standard20.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant osx_64_root_base6.40.0root_cxx_standard20"
-[tasks."build-osx_64_root_base6.40.0root_cxx_standard23"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.40.0root_cxx_standard23.yaml"
-description = "Build gds-root-extensions-feedstock with variant osx_64_root_base6.40.0root_cxx_standard23 directly (without setup scripts)"
-[tasks."inspect-osx_64_root_base6.40.0root_cxx_standard23"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.40.0root_cxx_standard23.yaml"
-description = "List contents of gds-root-extensions-feedstock packages built for variant osx_64_root_base6.40.0root_cxx_standard23"
+[tasks."build-osx_64_root_base6.40.2root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.40.2root_cxx_standard20.yaml"
+description = "Build gds-root-extensions-feedstock with variant osx_64_root_base6.40.2root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-osx_64_root_base6.40.2root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.40.2root_cxx_standard20.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant osx_64_root_base6.40.2root_cxx_standard20"
+[tasks."build-osx_64_root_base6.40.2root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.40.2root_cxx_standard23.yaml"
+description = "Build gds-root-extensions-feedstock with variant osx_64_root_base6.40.2root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-osx_64_root_base6.40.2root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.40.2root_cxx_standard23.yaml"
+description = "List contents of gds-root-extensions-feedstock packages built for variant osx_64_root_base6.40.2root_cxx_standard23"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
